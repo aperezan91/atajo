@@ -3,7 +3,8 @@ package gps;
  * Bicicleta class
  * 
  * @Java IES Severo Ochoa
- * @2.0
+ * @author Adrián Pérez Antón
+ * @version 3.0
  */
 
 public class Bicicleta {
@@ -22,7 +23,13 @@ public class Bicicleta {
         for(int i=0; i<camino1.length; i++)
         {
             sum1 += camino1[i];
+        }
+        for(int i=0; i<camino2.length; i++)
+        {
             sum2 += camino2[i];
+        }
+        for(int i=0; i<camino3.length; i++)
+        {
             sum3 += camino3[i];
         }
         
@@ -56,7 +63,6 @@ public class Bicicleta {
         int[] camino1 = {12,34,21,46,25};
         int[] camino2 = {24,1,5,64,10,15,21};
         int[] camino3 = {1,5,6,7,8,10,20,46,104};
-        System.out.println("El camino mÃ¡s corto es:"+Bicicleta.rutaCorta(camino1,camino2,camino3)+".");
+        System.out.println("El camino más corto es:"+Bicicleta.rutaCorta(camino1,camino2,camino3)+".");
     }
 }
-
